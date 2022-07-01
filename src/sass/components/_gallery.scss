@@ -1,8 +1,10 @@
 .gallery-section {
   padding-top: 20px;
+  padding-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -133,4 +135,9 @@
     width: 40px;
     height: 20px;
   }
+}
+
+.pagination__list {
+  display: flex;
+  gap: 10px;
 }
