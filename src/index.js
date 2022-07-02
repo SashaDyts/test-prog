@@ -1,14 +1,16 @@
 import { ImagesApiService } from './js/fetch-images';
+import { PaginationService } from './js/pagination';
+
 const imagesApiService = new ImagesApiService();
+const paginationService = new PaginationService();
 
 const refs = {
   galleryItem: document.querySelector('.gallery'),
 };
 
 async function lox() {
-  const data = await imagesApiService.fetchImages();
+  const data = await imagesApiService.fetchImages(imagesApiService.currentPage);
   const dataGenres = await imagesApiService.getGenres();
-  console.log(dataGenres);
   append(data, dataGenres);
 
   // console.log(ff);
@@ -20,7 +22,6 @@ lox();
 function makeGalleryCardsMarkup(data, dataGenres) {
   return data
     .map(data => {
-      console.log(dataGenres);
       let genresArray = dataGenres
         .filter(genre => data.genre_ids.includes(genre.id))
         .map(genre => genre.name);
@@ -47,16 +48,32 @@ function makeGalleryCardsMarkup(data, dataGenres) {
     .join('');
 }
 
-function append(data, dataGenres) {
+export function append(data, dataGenres) {
   refs.galleryItem.insertAdjacentHTML(
     'beforeend',
     makeGalleryCardsMarkup(data, dataGenres)
   );
 }
 
-console.log(imagesApiService.getGenres());
-
 const d = [1, 2, 3, 4, 5];
 
 d.splice(3);
-console.log(d);
+
+// paginationService.getRefs('.gallery__pagination');
+// paginationService.renderMarkupPagination(3);
+// paginationService.getRefs();
+
+paginationService.append(5);
+console.log(paginationService.chosenPage);
+
+// if (matchMedia) {
+//   const screen = window.matchMedia('(max-width:768px)');
+//   screen.addListener(changes);
+//   changes(screen);
+// }
+
+// function changes(screen) {
+//   if (screen.matches) {
+//     console.log('lox');
+//   }
+// }

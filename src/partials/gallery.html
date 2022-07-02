@@ -2,29 +2,61 @@
   <div class="container">
     <ul class="gallery"></ul>
     <div class="gallery__pagination">
-      <ul class="pagination__list">
-        <li class="pagination__item">
-          <a href="" onclick="return false">b</a>
-        </li>
-        <li class="pagination__item">
-          <a href="" onclick="return false">1</a>
-        </li>
-        <li class="pagination__item">
-          <a href="" onclick="return false">2</a>
-        </li>
-        <li class="pagination__item">
-          <a href="" onclick="return false">3</a>
-        </li>
-        <li class="pagination__item">
-          <a href="" onclick="return false">4</a>
-        </li>
-        <li class="pagination__item">
-          <a href="" onclick="return false">5</a>
-        </li>
-        <li class="pagination__item">
-          <a href="" onclick="return false">a</a>
-        </li>
-      </ul>
+      <button class="pagination-btns__btn btn-pag-previ">
+        <svg
+          class="svg"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.6666 8H3.33325"
+            stroke="black"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M7.99992 12.6667L3.33325 8.00004L7.99992 3.33337"
+            stroke="black"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+      <button class="pagination-btns__btn first-btn">1</button>
+      <button class="pagination-btns__btn dots" disabled="true">...</button>
+      <ul class="pagination-btns"></ul>
+      <button class="pagination-btns__btn dots" disabled="true">...</button>
+      <button class="pagination-btns__btn last-btn">20</button>
+      <button class="pagination-btns__btn btn-pag-next">
+        <svg
+          class="svg svg-next"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.6666 8H3.33325"
+            stroke="black"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M7.99992 12.6667L3.33325 8.00004L7.99992 3.33337"
+            stroke="black"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
     </div>
   </div>
 </section>
