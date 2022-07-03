@@ -34,7 +34,7 @@ function makeGalleryCardsMarkup(data, dataGenres) {
         <a href="" class="gallery__link"><div class="card">
           <img src="https://image.tmdb.org/t/p/w500${
             data.poster_path
-          }" alt="" class="card__img" width="398"/>
+          }" alt="" class="card__img" width="500"/>
           <p class="card__title">${data.title || data.name}</p>
           <div class="card__info">
             <p class="card__text">${genresArray.splice(-3).join(', ')} | ${

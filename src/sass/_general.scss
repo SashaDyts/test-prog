@@ -34,28 +34,44 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+// .container {
+//   min-width: 320px;
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   margin-left: auto;
+//   margin-right: auto;
+
+//   @media screen and (min-width: 480px) {
+//     width: 480px;
+//   }
+
+//   @media screen and (min-width: 768px) {
+//     width: 768px;
+//     padding-left: 32px;
+//     padding-right: 32px;
+//   }
+
+//   @media screen and (min-width: 1280px) {
+//     width: 1280px;
+//   }
+
 .container {
-  max-width: 100%;
-  margin: 0 auto;
+  min-width: 320px;
   padding-left: 20px;
   padding-right: 20px;
-  // margin-left: auto;
-  // margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: 480px) {
     width: 320px;
   }
+
   @media screen and (min-width: 768px) {
-    width: 768px;
-
-    padding-left: 16px;
-    padding-right: 16px;
+    width: 744px;
   }
-  @media screen and (min-width: 1280px) {
-    width: 1280px;
 
-    padding-left: 26px;
-    padding-right: 26px;
+  @media screen and (min-width: 1280px) {
+    width: 1256px;
   }
 }
 
