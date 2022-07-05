@@ -41,7 +41,7 @@ function makeGalleryCardsMarkup(data, dataGenres) {
         year || year2
       }<div class="card__ratting"><p class="card__rattimg-text">${vote}</p></div></p>
           </div>
-          
+
         </div></a>
       </li>`;
     })

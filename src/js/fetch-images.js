@@ -23,4 +23,14 @@ export class ImagesApiService {
 
     return response.data.genres;
   }
+
+  async searchFetch(pageNumber, query) {
+    const URL = `https://api.themoviedb.org/3/search/movie?api_key=${this.API_KEY}&language=en-US&page=${pageNumber}&include_adult=false&query="${query}`;
+    const response = await axios.get(URL);
+    return response.data.results;
+  }
+
+  getCurPage() {
+    console.log(this.currentPage);
+  }
 }
