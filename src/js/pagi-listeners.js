@@ -148,7 +148,7 @@ export function pagiListeners() {
     ) {
       paginationApi.isLastPage = false;
 
-      if (paginationApi.refs.changingBtns[0].textContent === '2') {
+      if (paginationApi.refs.changingBtns[0].textContent === '1') {
         return;
       }
 
