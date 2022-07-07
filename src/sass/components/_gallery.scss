@@ -181,7 +181,7 @@
   // justify-content: center;
   width: 40px;
   height: 40px;
-
+  padding: 0;
   background-color: white;
 
   border-radius: 5px;
@@ -237,4 +237,8 @@
   // @media screen and (min-width: 768px) {
   //   display: none;
   // }
+}
+
+.last__btn {
+  padding: 0;
 }

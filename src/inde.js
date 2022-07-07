@@ -1,17 +1,26 @@
 import { GalleryRenderApi } from './js/gallery-render';
 import { ImagesApiService } from './js/fetch-images';
-import { PaginApi } from './js/pagi';
+import { renderGal } from './js/render-gallery';
+// import { PaginApi } from './js/pagi';
 
-const paginationApi = new PaginApi();
+// const paginationApi = new PaginApi();
 const galleryRenderApi = new GalleryRenderApi();
 const fetchApi = new ImagesApiService();
 
-async function start() {
-  await galleryRenderApi.renderStartPage(paginationApi.currentPage);
-  paginationApi.append();
-}
+// galleryRenderApi.renderStartPage(1);
+renderGal(1);
+// paginationApi.append();
+// paginationApi.addEventListenersOnStaticBtns();
 
-start();
+// async function start() {
+//   await galleryRenderApi.renderStartPage(1);
+//   paginationApi.append();
+//   paginationApi.addEventListenersOnStaticBtns();
+//   // console.log(paginationApi.totalPages);
+//   // console.log(paginationApi.refs);
+// }
+
+// start();
 // paginationApi.append();
 // console.log(paginationApi.isMobile);
 // console.log(fetchApi.fetchAll(fetchApi.currentPage));

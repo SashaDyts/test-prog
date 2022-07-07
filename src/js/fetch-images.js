@@ -3,7 +3,7 @@ export class ImagesApiService {
   constructor() {
     this.id = [];
     this.currentPage = 1;
-    this.totalPages = '';
+    this.totalPages = 1;
     this.API_KEY = '8491f0c88fa7dc1f853ccc0c4b339dca';
   }
 
@@ -12,7 +12,9 @@ export class ImagesApiService {
     const options = {};
 
     const response = await axios.get(URL);
-    this.totalPages = response.data.total_pages;
+
+    this.totalPages = await response.data.total_pages;
+
     return response.data.results;
   }
 
@@ -31,6 +33,10 @@ export class ImagesApiService {
   }
 
   getCurPage() {
-    console.log(this.currentPage);
+    // console.log(this.currentPage);
+  }
+
+  getTotalPages(ne) {
+    this.totalPages = ne;
   }
 }
