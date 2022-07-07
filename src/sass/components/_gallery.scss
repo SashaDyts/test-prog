@@ -215,15 +215,15 @@
   color: white;
 }
 
-// .first__btn {
-//   display: none;
+.first__btn {
+  display: none;
 
-//   @media screen and (min-width: 768px) {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//   }
-// }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 .dots__btn {
   cursor: auto;
@@ -240,5 +240,11 @@
 }
 
 .last__btn {
-  padding: 0;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
