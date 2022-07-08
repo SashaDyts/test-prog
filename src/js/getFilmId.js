@@ -9,8 +9,8 @@ export function getFilmId() {
       return;
     }
     // console.log(event.target.dataset.id);
-    console.log(event.target.nodeName);
-    console.log(galleryRenderApi.refs.galleryLink);
+    // console.log(event.target.nodeName);
+    // console.log(galleryRenderApi.refs.galleryLink);
     galleryRenderApi.filmId = event.target.closest('.gallery__item').dataset.id;
 
     console.log(galleryRenderApi.filmId);
