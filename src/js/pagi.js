@@ -237,10 +237,10 @@ export class PaginApi {
     return array.join('');
   }
 
-  append(total) {
+  append(totalPage) {
     refs.paginationButtonsEl.insertAdjacentHTML(
       'afterbegin',
-      this.createFirstPaginationMarkup(total)
+      this.createFirstPaginationMarkup(totalPage)
     );
 
     this.getRefs();

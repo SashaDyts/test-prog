@@ -61,7 +61,7 @@ export class GalleryRenderApi {
       this.makeGalleryCardsMarkup(data, dataGenres)
     );
 
-    this.getFilmId();
+    // this.getFilmId();
   }
 
   async renderStartPage(pageToRander, funcAppendPagination) {
